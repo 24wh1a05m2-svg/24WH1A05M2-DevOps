@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-24wh1a05m2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-24wh1a05m2
+  template:
+    metadata:
+      labels:
+        app: app-24wh1a05m2
+    spec:
+      containers:
+        - name: app
+          image: 24wh1a05m2-app:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
