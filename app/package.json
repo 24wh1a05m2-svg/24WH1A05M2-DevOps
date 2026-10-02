@@ -1,0 +1,12 @@
+{
+  "name": "24wh1a05m2-devops",
+  "version": "1.0.0",
+  "description": "DevOps Lab Program 9",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
