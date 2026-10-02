@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: experiment12-24wh1a05m2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: experiment12-24wh1a05m2
+  template:
+    metadata:
+      labels:
+        app: experiment12-24wh1a05m2
+    spec:
+      containers:
+        - name: experiment12-container
+          image: 24wh1a05m2-experiment12:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
